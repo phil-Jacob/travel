@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" style="overflow-x: hidden;">
+  <head >
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tourism</title>
@@ -18,20 +18,32 @@
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
   </head>
-  <body>
+  <body style="overflow-x: hidden;">
     <!--  Header -->
     <header>
   
       <nav>
-        <li><a href="#">Bon Voyage</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Hotels</a></li>
-        <li><a href="#">Flights</a></li>
-        <li><a href="#">Bookings</a></li>
-        <li ><a href="#"><button>Login</button></a></li>
-        <li><a href="#"><button>Sign up</button></a></li>
+        <ul class="sidebar">   
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li ><a href="#">Destinations</a></li>
+          <li ><a href="#">Hotels</a></li>
+          <li ><a href="#">Flights</a></li>
+          <li ><a href="#">Bookings</a></li>
+          <li ><a href="#"><button>Login</button></a></li>
+          <li ><a href="#"><button>Signup</button></a></li>
+        </ul>
+     <ul>   
+      <li class="hideOnMobile"><a href="#">Bon Voyage</a></li>
+      <li class="hideOnMobile"><a href="#">Destinations</a></li>
+      <li class="hideOnMobile"><a href="#">Hotels</a></li>
+      <li class="hideOnMobile"><a href="#">Flights</a></li>
+      <li class="hideOnMobile"><a href="#">Bookings</a></li>
+      <li class="hideOnMobile"><a href="#"><button>Login</button></a></li>
+      <li class="hideOnMobile"><a href="#"><button>Signup</button></a></li>
+      <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
       </nav>
-    </header>
+    </header> 
     <!--  Home section -->
     <section class="home" id="home">
       <div class="home-text">
@@ -193,54 +205,10 @@
               adipiscing elit. Urna, tortor tempus.
             </p>
           </div>
-        </div>
-
-        <div class="ongoing">
-          <div class="ongoing-box">
-            <div class="greece-img">
-              <img src="/images/Rectangle 17.png" alt="" />
-            </div>
-            <h4>Trip to Greece</h4>
-            <p>
-              14-29 <br />
-              June
-            </p>
-            <div class="name">
-              by Phil <br />
-              Jacob
-            </div>
-            <div class="options">
-              <a href="#"><img src="/images/LEAF.png" alt="" /></a>
-              <a href="#"><img src="/images/map icon.png" alt="" /></a>
-              <a href="#"><img src="/images/send.png" alt="" /></a>
-            </div>
-            <div class="count">
-              <img class="build" src="images/building 1.png" alt="" />
-              <h4>
-                24 people <br />
-                going
-              </h4>
-              <div class="like">
-                <img src="/images/heart (6) 1.png" alt="" />
-              </div>
-            </div>
           </div>
-        </div>
-
-        <div class="rome">
-          <div class="rome-box">
-            <img src="images/Mask Group.png" alt="" />
-            <h4>Ongoing</h4>
-            <h3>Trip to rome</h3>
-            <br />
-            <p class=""><span style="color: #8a79df">40% </span>completed</p>
-            <div class="loading">
-              <img class="a" src="/images/Group 3.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="rome"><img src="/images/Image.png" alt="" srcset=""></div>
+        </div>       
+    </section> 
 
     <!--  about section  -->
     <section class="about">

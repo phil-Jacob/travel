@@ -9,10 +9,9 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0; /* Add margin reset */
-    font-family: 'Poppins', sans-serif; /* Assume 'Poppins' as the font */
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -41,6 +40,7 @@ header {
 
 nav {
     color: transparent;
+    box-shadow: 3px 3px 5px;
 }
 nav ul{
     width: 100%;
@@ -53,42 +53,68 @@ nav ul{
 
 nav li{
     height: 50px;
-
 }
 
 nav a {
-    /* 'Hug' is not a valid property, use 'auto' or 'content' for width and height */
+
     width: auto;
-    height: auto;
-    /* Top and left properties should not be used without position: absolute or relative */
-    padding: 0px 20px; /* Adjusted padding for better aesthetics */
-    margin: 0 10px; /* Add margin between items */
+    height: 100%;
+    padding: 0px 20px; 
+    margin: 0 10px; 
     display: flex;
     align-items: center;
     color: black;
 }
 
 nav a:hover {
-    background: rgb(200, 132, 132);
+    background: rgb(116, 193, 218);
 }
 niv li:first-child{
-    margin-right: a;
+    margin-right: auto;
 }
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.366);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.menu-btn{
+    display: none   ;
+}
+
 button {
+    
     width: 107px;
     height: 40px;
-    /* Top and left properties should not be used without position: absolute or relative */
     padding: 8px 10px;
     border-radius: 8px;
-    border: 1px solid #EC682C; /* Specify border color */
-    background: #EC682C;
+    border: 1px solid #15c76b; 
+   background: #EC682C;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 400;
-    line-height: 22px; /* Adjusted line height for better aesthetics */
-    letter-spacing: 0.02em;
-    text-align: left;
-}
+    line-height: 22px; 
+     letter-spacing: 0.02em;
+    text-align: left; 
+} 
 
 .btn {
     padding: 10px 20px;
@@ -102,7 +128,7 @@ section {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('../images/img1.png') center/cover no-repeat; /* Adjusted background shorthand */
+    background: url('../images/img1.png') center/cover no-repeat; 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
@@ -111,7 +137,7 @@ section {
 .home-text h1 {
     font-size: 52px;
     font-weight: 700;
-    line-height: 1.2; /* Adjusted line height for better aesthetics */
+    line-height: 1.2; 
     letter-spacing: -0.04em;
     color: #4B40C5;
     margin-bottom: 20px;
@@ -120,7 +146,7 @@ section {
 .home-text h2 {
     font-size: 32px;
     font-weight: 700;
-    line-height: 1.2; /* Adjusted line height for better aesthetics */
+    line-height: 1.2; 
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
@@ -132,7 +158,7 @@ section {
     background-color: #4B40C5;
     width: 228.00958251953125px;
     height: 75.88206481933594px;
-    /* Top and left properties should not be used without position: absolute or relative */
+   
     border-radius: 13.301215171813965px;
     font-size: 24px;
     font-weight: 500;
@@ -158,7 +184,7 @@ header .sticky {
 .text2 h3 {
     font-size: 32px;
     font-weight: 700;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
+    line-height: 1.5; 
     letter-spacing: 0em;
     text-align: center;
     color: #4B40C5;
@@ -168,7 +194,7 @@ header .sticky {
 .text2 h2 {
     font-size: 50px;
     font-weight: 700;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
+    line-height: 1.5; 
     letter-spacing: 0em;
     padding: 10px 10%;
     text-align: center;
@@ -196,7 +222,7 @@ header .sticky {
 .container h4 {
     font-size: 22px;
     font-weight: 500;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
+    line-height: 1.5; 
     letter-spacing: 0em;
     text-align: center;
     margin-bottom: 8px;
@@ -205,7 +231,7 @@ header .sticky {
 .container p {
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
+    line-height: 1.5; 
     letter-spacing: 0em;
     text-align: center;
 }
@@ -223,7 +249,7 @@ header .sticky {
 .title2 h3 {
     font-size: 32px;
     font-weight: 700;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
+    line-height: 1.5; 
     letter-spacing: 0em;
     text-align: center;
     color: #4B40C5;
@@ -233,8 +259,7 @@ header .sticky {
     font-size: 62px;
     font-weight: 700;
     line-height: 1.
-
-5; /* Adjusted line height for better aesthetics */
+5; 
     letter-spacing: 0em;
     text-align: center;
     color: #14183E;
@@ -357,122 +382,13 @@ header .sticky {
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
 
-.ongoing {
+
+.rome {
     position: relative;
-    width: 90%; /* Adjusted width */
-    height: 480px;
-    top: -120px;
-    left: 5%; /* Adjusted left value */
-    border-radius: 30px;
-    box-shadow: 2px 2px 5px 1px rgba(194, 194, 209, 0.2);
+    top: -450px;
+    left: 132px;
 }
 
-.ongoing-box {
-    border-radius: 30px;
-    box-shadow: 60px -100px 90px 10px rgb(201, 119, 234);
-}
-
-.greece-img {
-    position: relative;
-    top: 20px;
-    left: 25px;
-}
-
-.ongoing h4 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
-    letter-spacing: 0.015em;
-    text-align: left;
-    margin-bottom: 8px;
-}
-
-.ongoing p {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
-    letter-spacing: -0.005em;
-    text-align: left;
-    color: #84829A;
-}
-
-.name {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
-    color: #84829A;
-}
-
-.options {
-    font-size: 20px;
-}
-
-.build {
-    font-size: 20px;
-}
-
-.count h4 {
-    font-size: 21px;
-    font-weight: 500;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: #84829A;
-}
-
-.like {
-    top: -40px;
-    left: auto;
-    right: 5%; /* Adjusted right value */
-}
-
-.rome-box {
-    position: relative;
-    width: 90%;
-    height: 154.591552734375px;
-    top: 135.91796875px;
-    left: 5%; /* Adjusted left value */
-    border-radius: 25px;
-    background-color: white;
-    box-shadow: 2px 2px 5px 1px rgba(216, 216, 224, 0.444);
-}
-
-.rome-box img {
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
-
-.rome-box h4 {
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
-    letter-spacing: -0.035em;
-    text-align: left;
-    color: #5E6282;
-}
-
-.rome-box h3 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
-    letter-spacing: -0.015em;
-    text-align: left;
-}
-
-.rome-box p {
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 1.5; /* Adjusted line height for better aesthetics */
-    letter-spacing: -0.055em;
-    text-align: left;
-}
-
-.loading {
-    position: relative;
-    top: -80px;
-    left: -30px;
-}
 
 .about {
     position: relative;
@@ -540,21 +456,43 @@ header .sticky {
     text-align: center;
 }
 
+.home,
+.container,
+.ongoing,
+.rome-box,
+.subheading {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+@media screen and (max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}
 @media screen and (min-width: 600px) {
     .a, button, .homebtn, .container-box, .subheading {
-        flex-basis: 48%; /* Adjusted flex-basis */
+        flex-basis: 48%;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .a, button, .homebtn, .container-box, .subheading {
-        flex-basis: 30%; /* Adjusted flex-basis */
+        flex-basis: 30%;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .a, button, .homebtn, .container-box, .subheading {
-        flex-basis: 22%; /* Adjusted flex-basis */
+        flex-basis: 22%;
     }
 }
 
