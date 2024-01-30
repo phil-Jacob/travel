@@ -1,0 +1,108 @@
+Certainly! Below is a simple example of a responsive travel landing page using HTML, CSS with Flexbox, and media queries. This example assumes a mobile-first approach, where the design starts with mobile styles and then uses media queries to adapt for larger screens.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .destination-card {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 600px) {
+            .destination-card {
+                flex-basis: 48%;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .destination-card {
+                flex-basis: 30%;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .destination-card {
+                flex-basis: 22%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Exciting Destinations</h1>
+        <p>Your next adventure awaits!</p>
+    </header>
+
+    <section>
+        <div class="destination-card">
+            <img src="https://placekitten.com/300/200" alt="Destination 1">
+            <h2>Beach Paradise</h2>
+            <p>Relax on the sunny beaches of this beautiful paradise.</p>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://placekitten.com/301/200" alt="Destination 2">
+            <h2>Mountain Retreat</h2>
+            <p>Escape to the serene mountains and enjoy breathtaking views.</p>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://placekitten.com/302/200" alt="Destination 3">
+            <h2>City Lights</h2>
+            <p>Experience the vibrant energy of the city that never sleeps.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Adventures</p>
+    </footer>
+
+</body>
+
+</html>
+```
+
+This code provides a basic structure for a travel landing page with responsive design. The media queries are used to adjust the layout for different screen sizes, ensuring a good user experience on various devices.
