@@ -1,306 +1,292 @@
+
 <!DOCTYPE html>
-<html lang="en" style="overflow-x: hidden;">
-  <head >
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tourism</title>
-    <link rel="stylesheet" href="/CSS/cssstyle.css" />
+<html lang="en" style="overflow-x: hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourism</title>
+  <link rel="stylesheet" href="/CSS/cssstyle.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Peralta&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Peralta&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-  </head>
-  <body style="overflow-x: hidden;">
-    <!--  Header -->
-    <header>
-  
-      <nav>
-        <ul class="sidebar">   
-          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-          <li ><a href="#">Destinations</a></li>
-          <li ><a href="#">Hotels</a></li>
-          <li ><a href="#">Flights</a></li>
-          <li ><a href="#">Bookings</a></li>
-          <li ><a href="#"><button>Login</button></a></li>
-          <li ><a href="#"><button>Signup</button></a></li>
-        </ul>
-     <ul>   
-      <li class="hideOnMobile"><a href="#">Bon Voyage</a></li>
-      <li class="hideOnMobile"><a href="#">Destinations</a></li>
-      <li class="hideOnMobile"><a href="#">Hotels</a></li>
-      <li class="hideOnMobile"><a href="#">Flights</a></li>
-      <li class="hideOnMobile"><a href="#">Bookings</a></li>
-      <li class="hideOnMobile"><a href="#"><button>Login</button></a></li>
-      <li class="hideOnMobile"><a href="#"><button>Signup</button></a></li>
-      <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-    </ul>
-      </nav>
-    </header> 
-    <!--  Home section -->
-    <section class="home" id="home">
-      <div class="home-text">
-        <h1>Travel, enjoy and live a new and full life</h1>
-        <h2>BEST DESTINATION AROUND THE WORLD</h2>
-        <br />
-        <br />
-        <br />
-        <br /><br />
-        <button class="homebtn">Find out more</button>
-      </div>
-    </section>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+<body style="overflow-x: hidden">
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+          </a>
+        </li>
+        <li><a href="#">Bon Voyage</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="#"><button>Login</button></a></li>
+        <li><a href="#"><button>Signup</button></a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile">
+          <a href="#"><img src="./images/Bon Voyage.png" alt="" /></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#"><strong>Destinations</strong></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#"><strong>Hotels</strong></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#"><strong>Flights</strong></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#"><strong>Bookings</strong></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#"><button>Login</button></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="#"><button>Signup</button></a>
+        </li>
+        <li class="menu-btn" onclick="showSidebar()">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <!--  conatiner -->
-    <section class="category">
-      <div class="text2">
-        <h3>CATEGORY</h3>
-        <h2>We Offer Best Services</h2>
-      </div>
-      <div class="row-items">
-        <div class="conatiner">
-          <div class="conatiner-img">
-            <img src="/images/sat.png" alt="" srcset="" />
-          </div>
-          <h4>Calculated Weather</h4>
-          <p>As much of information possible with the weather</p>
+  <!-- Home section -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Travel, enjoy and live a new and full life</h1>
+      <h2>BEST DESTINATION AROUND THE WORLD</h2>
+      <button class="homebtn">Find out more</button>
+    </div>
+  </section>
+
+  <!-- Container section -->
+  <section class="category">
+    <div class="category">
+      <h3>CATEGORY</h3>
+      <h2>We Offer Best Services</h2>
+    </div>
+    <div class="row-items">
+      <!-- Container 1 -->
+      <div class="container">
+        <div class="container-img">
+          <img src="/images/sat.png" alt="" srcset="" />
         </div>
-
-        <div class="conatiner">
-          <div class="conatiner-box">
-            <div class="conatiner-img">
-              <img src="images/rect2.png" alt="" srcset="" />
-            </div>
-            <h4>Best Flights</h4>
-            <p>Getting cheap best flights</p>
-          </div>
-        </div>
-
-        <div class="conatiner">
-          <div class="conatiner-box">
-            <div class="conatiner-img">
-              <img src="/images/mic.png" alt="" srcset="" />
-            </div>
-            <h4>Local Events</h4>
-            <p>Getting good iternary based on the events</p>
-          </div>
-        </div>
-
-        <div class="conatiner">
-          <div class="conatiner-img">
-            <img src="/images/sett.png" alt="" srcset="" />
-          </div>
-          <h4>Customization</h4>
-          <p>We deliver outsourced services for customers</p>
-        </div>
-      </div>
-    </section>
-
-    <!--  package  section-->
-
-    <section class="package" id="package">
-      <div class="title2">
-        <h3>Top Selling</h3>
-        <h2>Top Destinations</h2>
+        <h4>Calculated Weather</h4>
+        <p>As much information as possible with the weather</p>
       </div>
 
-      <div class="package-content">
-        <div class="box">
-          <div class="thum">
-            <img src="/images/rome.png" alt="" />
+      <!-- Container 2 -->
+      <div class="container">
+        <div class="container-box">
+          <div class="container-img">
+            <img src="images/rect2.png" alt="" srcset="" />
           </div>
-          <div class="dest-content">
-            <div class="location">
-              <h3>₹5.42Lakh</h3>
-              <h4>Rome,Italy</h4>
-              <p>10 Days Trip</p>
-            </div>
-            <div class="nav">
-              <a href="#"
-                ><i class="bx bxs-navigation" style="color: #080809"></i
-              ></a>
-            </div>
-          </div>
+          <h4>Best Flights</h4>
+          <p>Getting cheap best flights</p>
         </div>
+      </div>
 
-        <div class="box">
-          <div class="thum">
-            <img src="/images/london.png" alt="" />
+      <!-- Container 3 -->
+      <div class="container">
+        <div class="container-box">
+          <div class="container-img">
+            <img src="/images/mic.png" alt="" srcset="" />
           </div>
-          <div class="dest-content">
-            <div class="location">
-              <h3>₹4.2Lakh</h3>
-              <h4>London,uk</h4>
-              <p>12 Days Trip</p>
-            </div>
-            <div class="nav">
-              <a href="#"
-                ><i class="bx bxs-navigation" style="color: #080809"></i
-              ></a>
-            </div>
-          </div>
+          <h4>Local Events</h4>
+          <p>Getting a good itinerary based on the events</p>
         </div>
+      </div>
 
-        <div class="box">
-          <div class="thum">
-            <img src="/images/euro.png" alt="" />
+      <!-- Container 4 -->
+      <div class="container">
+        <div class="container-img">
+          <img src="/images/sett.png" alt="" srcset="" />
+        </div>
+        <h4>Customization</h4>
+        <p>We deliver outsourced services for customers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Package section -->
+  <section class="package" id="package">
+    <div class="title2">
+      <h3>Top Selling</h3>
+      <h2
+
+>Top Destinations</h2>
+    </div>
+
+    <div class="package-content">
+      <!-- Box 1 -->
+      <div class="box">
+        <div class="thum">
+          <img src="/images/rome.png" alt="" />
+        </div>
+        <div class="dest-content">
+          <div class="location">
+            <h3>₹5.42 Lakh</h3>
+            <h4>Rome, Italy</h4>
+            <p>10 Days Trip</p>
           </div>
-
-          <div class="dest-content">
-            <div class="location">
-              <h3>₹15Lakh</h3>
-              <h4>Full Europe</h4>
-              <p>28 Days Trip</p>
-            </div>
-            <div class="nav">
-              <a href="#"
-                ><i class="bx bxs-navigation" style="color: #080809"></i
-              ></a>
-            </div>
+          <div class="nav">
+            <a href="#"><i class="bx bxs-navigation" style="color: #080809"></i></a>
           </div>
         </div>
       </div>
-    </section>
 
-    <!--  roadmap section-->
-    <section class="roadmap" id="roadmap">
+      <!-- Box 2 -->
+      <div class="box">
+        <div class="thum">
+          <img src="/images/london.png" alt="" />
+        </div>
+        <div class="dest-content">
+          <div class="location">
+            <h3>₹4.2 Lakh</h3>
+            <h4>London, UK</h4>
+            <p>12 Days Trip</p>
+          </div>
+          <div class="nav">
+            <a href="#"><i class="bx bxs-navigation" style="color: #080809"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="box">
+        <div class="thum">
+          <img src="/images/euro.png" alt="" />
+        </div>
+        <div class="dest-content">
+          <div class="location">
+            <h3>₹15 Lakh</h3>
+            <h4>Full Europe</h4>
+            <p>28 Days Trip</p>
+          </div>
+          <div class="nav">
+            <a href="#"><i class="bx bxs-navigation" style="color: #080809"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap section -->
+  <section class="roadmap" id="roadmap">
+    <div class="resDiv1">
       <div class="trip">
         <h5>Easy and Fast</h5>
-        <h1>
-          BOOK YOUR NEXT TRIP <br />
-          IN 3 EASY STEPS
-        </h1>
+        <h1>BOOK YOUR NEXT TRIP <br />IN 3 EASY STEPS</h1>
       </div>
       <div class="steps">
         <div>
+          <!-- Step 1 -->
           <div class="desti">
             <img src="/images/Group 7.png" alt="" />
             <h3>Choose Destination</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. Urna, tortor tempus.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit. Urna, tortor tempus.</p>
           </div>
 
+          <!-- Step 2 -->
           <div class="desti">
             <img src="/images/Group 8.png" alt="" />
             <h3>Make Payment</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. Urna, tortor tempus.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit. Urna, tortor tempus.</p>
           </div>
 
+          <!-- Step 3 -->
           <div class="desti">
             <img src="/images/Group 9.png" alt="" />
             <h3>Reach Airport on Selected Date</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit. Urna, tortor tempus.
-            </p>
-          </div>
-          </div>
-          <div class="rome"><img src="/images/Image.png" alt="" srcset=""></div>
-        </div>       
-    </section> 
-
-    <!--  about section  -->
-    <section class="about">
-      <div class="us">
-        <h3>Why Choose Us</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          <br />
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          <br />
-          ever since the 1500s.
-        </p>
-      </div>
-    </section>
-
-    <!--  service section  -->
-    <section class="service">
-      <div class="trip-detail">
-        <div class="context">
-          <div class="icons">
-            <img src="/images/Ellipse 5.png" alt="" />
-          </div>
-          <div class="subheading">
-            <h4>
-              <br />
-              <br />Handpicked Hotels <br />
-              <br />
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet, <br />
-              consect adipiscing elit. Aenean <br />
-              commodo ligula eget dolor. <br />
-              Aenean massa
-            </p>
-          </div>
-        </div>
-
-        <div class="context">
-          <div class="icons">
-            <img src="/images/Ellipse 6.png" alt="" />
-          </div>
-
-          <div class="subheading">
-            <h4>
-              <br />
-              <br />World Class Service <br />
-              <br />
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet, <br />
-              consect adipiscing elit. Aenean <br />
-              commodo ligula eget dolor. Aenean <br />
-              massa
-            </p>
-          </div>
-        </div>
-
-        <div class="context">
-          <div class="icons">
-            <img src="/images/Ellipse 7.png" alt="" />
-          </div>
-
-          <div class="subheading">
-            <h4>
-              <br />
-              <br />
-              Best Price Guarantee <br />
-              <br />
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet, <br />
-              consect adipiscing elit. <br />
-              Aenean commodo ligula eget <br />
-              dolor.Aenean massa
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit. Urna, tortor tempus.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="resDiv2">
+      <div class="rome"><img src="/images/Image.png" alt="" srcset="" /></div>
+    </div>
+  </section>
 
-      <!--  subscribe section  -->
-      <section class="subscribe">
-          <div><img src="images/Group 5409.png" alt="">
-          </div>
-        </section>
+  <!-- About section -->
+  <section class="about">
+    <div class="us">
+      <h3>Why Choose Us</h3>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        <br />industry. Lorem Ipsum has been the industry's standard dummy text
+        <br />ever since the 1500s.
+      </p>
+    </div>
+  </section>
 
-        <!--  footer section  -->
-        <section class="footer">
-            <div><img src="images/footer.png" alt="">
-            </div>
-        </section>
-        
-    <script src="/script.js"></script>
-  </body>
+  <!-- Service section -->
+  <section class="service">
+    <div class="trip-detail">
+      <div class="context">
+        <!-- Handpicked Hotels -->
+        <div class="icons">
+          <img src="/images/Ellipse 5.png" alt="" />
+        </div>
+        <div class="subheading">
+          <h4><br /><br />Handpicked Hotels<br /><br /></h4>
+          <p>Lorem ipsum dolor sit amet, <br />consect adipiscing elit. Aenean <br />commodo ligula eget dolor. <br />Aenean massa</p>
+        </div>
+      </div>
+
+      <!-- World Class Service -->
+      <div class="context">
+        <div class="icons">
+          <img src="/images/Ellipse 6.png" alt="" />
+        </div>
+        <div class="subheading">
+          <h4><br /><br />World Class Service<br /><br /></h4>
+          <p>Lorem ipsum dolor sit amet, <br />consect adipiscing elit. Aenean <br />commodo ligula eget dolor. Aenean <br />massa</p>
+        </div>
+      </div>
+
+      <!-- Best Price Guarantee -->
+      <div class="context">
+        <div class="icons">
+          <img src="/images/Ellipse 7.png" alt="" />
+        </div>
+        <div class="subheading">
+          <h4><br /><br />Best Price Guarantee<br /><br /></h4>
+          <p>Lorem ipsum dolor sit amet, <br />consect adipiscing elit. <br />Aenean commodo ligula eget <br />dolor.Aenean massa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe section -->
+  <section class="subscribe">
+    <div>
+      <img class="image-content" src="images/Group 5409.png" alt="" />
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <section class="footer">
+    <div><img class="image-content" src="images/footer.png" alt="" /></div>
+  </section>
+
+  <script src="/script.js"></script>
+</body>
 </html>
+```
